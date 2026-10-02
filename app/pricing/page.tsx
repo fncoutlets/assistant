@@ -1,0 +1,6 @@
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
+import { MarketingNavbar, Footer } from '@/components/marketing/marketing-home'
+import { Button, Card } from '@/components/ui/primitives'
+
+export default function PricingPage() { return <div className="min-h-screen bg-background"><MarketingNavbar /><main className="mx-auto max-w-5xl px-5 py-20 sm:px-8 lg:py-28"><div className="text-center"><p className="overline">Pricing</p><h1 className="display-xl mt-5">Make room for what matters.</h1><p className="body-lg mx-auto mt-7 max-w-xl text-muted-foreground">We are shaping a simple way to bring a personal advisory team into your everyday. Pricing details will be shared as the experience gets closer to launch.</p></div><Card className="mx-auto mt-14 max-w-md p-8 text-center sm:p-10"><p className="overline">Early access</p><h2 className="heading-lg mt-4">Be among the first</h2><p className="mt-3 text-sm leading-6 text-muted-foreground">Join the early access list to follow along and help shape the experience.</p><Link href="/signup" className="mt-8 inline-flex"><Button size="lg">Get started <ArrowRight data-icon="inline-end" /></Button></Link></Card></main><Footer /></div> }
